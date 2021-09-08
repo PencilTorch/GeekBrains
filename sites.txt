@@ -1,3 +1,8 @@
 # https://leetcode.com/
 # https://www.codewars.com/
 # https://www.hackerrank.com/
+WebClient^ wb = gcnew WebClient();
+    String^ line = wb->DownloadString("http://www.cbr.ru/scripts/XML_daily.asp?"); //Скачиваем страницу с сайта
+    Regex^ regex = gcnew Regex("<CharCode>"+comboBox1->Text+"</CharCode><Nominal>(.*?)</Nominal><Name>(.*?)</Name><Value>(.*?)</Value>"); //Регулярное выражение
+    Match^ match = regex->Match(line); //Ищем совпадения по шаблону и записываем в группу
+    label2->Text = match->Groups[1]->Value + " " + comboBox1->Text + " = " + match->Groups[3]->Value + " RUB";
