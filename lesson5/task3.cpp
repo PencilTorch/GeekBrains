@@ -1,27 +1,29 @@
-﻿//task 3
+//task 3
 #include <iostream>
 using namespace std;
 
-void printArr(int* arr, int size = 8) {
+void printArr(int* arr, const int size) {
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
     cout << endl;
 }
 
-void filler(int* arr, int size = 8) {
-    for (int i = 0, k = 1; i < 0; i++, k += 3) {
+void fillArr(int* arr, const int size) {
+    for (int i = 0, k = 1; i < size; i++, k += 3) {
         arr[i] = k;
     }
 }
 
 int main()
 {
-    int arr[8];
-    printArr(arr);
-    filler(arr);
-    printArr(arr);
-
+    const int SIZE = 8;
+    int arr[SIZE] = {0};
+    printArr(arr, SIZE);
+    fillArr(arr, SIZE);
+    printArr(arr, SIZE);
+    
+    system("pause");
     return 0;
 }
 
