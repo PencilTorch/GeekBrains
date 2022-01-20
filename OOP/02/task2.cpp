@@ -11,10 +11,10 @@ public:
 	void setColor(std::string color) {
 		this->color = color;
 	}
-	std::string getColor() {
+	std::string getColor() const {
 		return color;
 	}
-	std::string getName() {
+	std::string getName() const {
 		return name;
 	}
 protected:
