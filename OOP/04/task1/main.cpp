@@ -2,6 +2,7 @@
 
 int main() {
 	ArrayInt arr;
+	arr.push_back(11);
 	arr.push_back(15);
 	arr.push_back(2);
 	arr.push_back(51);

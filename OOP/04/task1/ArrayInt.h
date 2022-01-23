@@ -1,5 +1,7 @@
-#pragma once
-#include <cassert> // для assert()
+#ifndef ARRAYINT_H
+#define ARRAYINT_H
+
+#include <cassert> // РґР»СЏ assert()
 
 class ArrayInt {
 private:
@@ -33,4 +35,4 @@ public:
     void printArray();
 };
 
-
+#endif
