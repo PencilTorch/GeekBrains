@@ -1,7 +1,7 @@
 #ifndef ARRAYINT_H
 #define ARRAYINT_H
 
-#include <cassert> // для assert()
+#include <cassert> // for assert()
 
 class ArrayInt {
 private:
