@@ -8,7 +8,7 @@ public:
 	enum class Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
 	enum class valueCard {
 		ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN,
-		JACK = 10, KING = 10, QUEEN = 10 };
+		JACK, KING, QUEEN};
 
 	Card(valueCard vc = valueCard::KING, Suit s = Suit::DIAMONDS, bool ifu = false) : value(vc), suit(s), status(ifu) {}
 
@@ -33,45 +33,46 @@ public:
 			return "HEARTS";
 		case Suit::SPADES:
 			return "SPADES";
+		default:
+			return "";
 		}
 	}
 
 	string getValueCard() const {
-		if (value == valueCard::ACE)
+		switch (value) {
+		case Card::valueCard::ACE:
 			return "ACE";
-		if (value == valueCard::TWO)
+		case Card::valueCard::TWO:
 			return "TWO";
-		if (value == valueCard::THREE)
+		case Card::valueCard::THREE:
 			return "THREE";
-		if (value == valueCard::FOUR)
+		case Card::valueCard::FOUR:
 			return "FOUR";
-		if (value == valueCard::FIVE)
+		case Card::valueCard::FIVE:
 			return "FIVE";
-		if (value == valueCard::SIX)
+		case Card::valueCard::SIX:
 			return "SIX";
-		if (value == valueCard::SEVEN)
+		case Card::valueCard::SEVEN:
 			return "SEVEN";
-		if (value == valueCard::EIGHT)
+		case Card::valueCard::EIGHT:
 			return "EIGHT";
-		if (value == valueCard::NINE)
+		case Card::valueCard::NINE:
 			return "NINE";
-		if (value == valueCard::TEN)
+		case Card::valueCard::TEN:
 			return "TEN";
-		if (value == valueCard::JACK)
+		case Card::valueCard::JACK:
 			return "JACK";
-		if (value == valueCard::KING)
+		case Card::valueCard::KING:
 			return "KING";
-		if (value == valueCard::QUEEN)
+		case Card::valueCard::QUEEN:
 			return "QUEEN";
+		default:
+			return "";
+		}
 	}
 
-	friend ostream& operator<<(ostream &out, const Card &card) {
-		if (card.status) {
-		out << card.getSuitName() << " " << card.getValueCard() << "\n";
-		}
-		else
-			out << "XX \n";
-		return out;
+	bool getStatusCard() const {
+		return status;
 	}
 
 private:
@@ -111,6 +112,9 @@ public:
 				Ace_of_Base = false;
 				sum += 11;
 			}
+			else if ((*it)->getValue() > 10) {
+				sum += 10;
+			}
 			else {
 				sum += (*it)->getValue();
 			}
@@ -135,6 +139,16 @@ public:
 	void Bust() const {
 		cout << "Player " << name << " have is a bust!" << endl;
 	}
+// task 5.2
+	friend ostream& operator<<(ostream& out, const GenericPlayer& gp) {
+		out << "Name player: " << gp.name << " Cards in hand:\n";
+		for (vector<Card*>::const_iterator it = gp.m_cards.begin(); it != gp.m_cards.end(); ++it) {
+			out << (*it)->getSuitName() << " " << (*it)->getValueCard() << "\n";
+		}
+		out << "Total points: " << gp.GetTotal() << "\n";
+		return out;
+	}
+
 protected:
 	string name;
 };
@@ -185,11 +199,28 @@ public:
 	}
 };
 
+// task 5.1
+ostream& operator<<(ostream& out, const Card& card) {
+	if (card.getStatusCard()) {
+		out << card.getSuitName() << " " << card.getValueCard() << "\n";
+	}
+	else
+		out << "XX \n";
+	return out;
+}
+
+
+
 int main() {
 
-	Card card;
-	card.Flip();
-	cout << card;
+	Card* pCard = new Card;
+	pCard->Flip();
+	cout << *pCard;
 
+	Player player;
+	player.Add(pCard);
+	cout << player;
+	
+	player.Clear();
 	return 0;
 }
