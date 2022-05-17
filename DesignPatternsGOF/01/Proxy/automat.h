@@ -1,6 +1,7 @@
-﻿#include <iostream>
+#pragma once
+#include <iostream>
+#include <string>
 #include <map>
-#include <ctime>
 
 class ISellSystem {
 public:
@@ -8,6 +9,7 @@ public:
     virtual void sellProduct(std::string) = 0;
     virtual void addProduct(std::string, size_t) = 0;
 };
+
 class Automaton : ISellSystem {
 private:
     std::string location;
@@ -23,7 +25,7 @@ public:
     void changePrice(std::string name, float newPrice) override {
         goods_price[name] = newPrice;
     }
-    void sellProduct(std::string name) {
+    void sellProduct(std::string name) override {
         if (goods_count[name] > 0) {
             recieved_money += goods_price[name];
         }
@@ -31,7 +33,7 @@ public:
             std::cerr << "Not enough goods" << std::endl;
         }
     }
-    void addProduct(std::string name, size_t count) {
+    void addProduct(std::string name, size_t count) override {
         goods_count[name] += count;
     }
     double allMoneyReport() const {
@@ -42,13 +44,8 @@ public:
     }
     std::map <std::string, size_t> goodsCountReport() {
         return goods_count;
-    };
+    }
     std::map <std::string, float> goodsPriceReport() {
         return goods_price;
-    };
-
-int main() {
-    
-
-    return 0;
-}
+    }
+};
