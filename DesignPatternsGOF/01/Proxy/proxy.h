@@ -12,18 +12,13 @@ public:
     ~proxyAutomat() { delete automat; }
 
     void changePrice(std::string name, float newPrice) override {
-        goods_price[name] = newPrice;
+        automat->changePrice(name, newPrice);
     }
     void sellProduct(std::string name) override {
-        if (goods_count[name] > 0) {
-            recieved_money += goods_price[name];
-        }
-        else {
-            std::cerr << "Not enough goods" << std::endl;
-        }
+        automat->sellProduct(name);
     }
     void addProduct(std::string name, size_t count) override {
-        goods_count[name] += count;
+        automat->addProduct(name, count);
     }
     double allMoneyReport() {
         updateData();
