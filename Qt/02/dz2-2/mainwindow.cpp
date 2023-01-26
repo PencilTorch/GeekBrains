@@ -22,6 +22,8 @@ void MainWindow::fillModel() {
     }
     ui->listView->setModel(model);
     ui->listView->setEditTriggers(QAbstractItemView::EditTrigger::DoubleClicked);
+    ui->listView->setDragDropMode(QAbstractItemView::DragDrop);
+    ui->listView->setDefaultDropAction(Qt::MoveAction);
 }
 
 
@@ -37,4 +39,10 @@ void MainWindow::on_pushButton_clicked() {
     model->appendRow(new QStandardItem(QIcon(QIcon("./Icons/Nothing.png")), "Другой язык"));
 }
 
+
+//удалить
+void MainWindow::on_pushButton_2_clicked() {
+    int _row = ui->listView->currentIndex().row();
+    model->removeRow(_row);
+}
 
