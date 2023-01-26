@@ -16,9 +16,17 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    void fillModel();
+
+private slots:
+    void on_checkBox_clicked(bool checked);
+
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     QStandardItemModel *model;
+    QStringList lgvich {"C++", "Python", "Java", "C#", "PHP", "JavaScript"};
 
 };
 #endif // MAINWINDOW_H
