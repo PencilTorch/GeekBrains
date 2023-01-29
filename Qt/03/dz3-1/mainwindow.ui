@@ -15,9 +15,6 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QTextEdit" name="textEdit"/>
-    </item>
     <item row="1" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
@@ -36,6 +33,9 @@
       </item>
      </layout>
     </item>
+    <item row="0" column="0">
+     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -44,7 +44,7 @@
      <x>0</x>
      <y>0</y>
      <width>567</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -61,6 +61,7 @@
     <property name="title">
      <string>Справка</string>
     </property>
+    <addaction name="action_4"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -91,6 +92,15 @@
    </property>
    <property name="text">
     <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/img/info.png</normaloff>:/res/img/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
    </property>
   </action>
  </widget>
