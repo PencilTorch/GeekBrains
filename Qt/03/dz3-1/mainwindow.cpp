@@ -18,29 +18,20 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked() {
     QString fileName = QFileDialog::getOpenFileName(this, tr("Открыть текстовый файл"), "", tr("Текстовый файл (*.txt)"));
     QFile file(fileName);
-    if (!file.open(QIODevice::ReadWrite | QIODevice::Text))
-    return;
-
-    QTextStream in(&file);
-    QString line;
-    while (!in.atEnd())
-        line += in.readLine();
-    ui->plainTextEdit->setPlainText(line);
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QByteArray byteArray = file.readAll();
+        ui->plainTextEdit->setPlainText(tr(byteArray.data()));
+    }
 }
 
 //запись
 void MainWindow::on_pushButton_2_clicked() {
-    QString filename = QFileDialog::getSaveFileName(this,tr("Сохранить файл"),QDir::current().path(), tr("Текстовый файл (*.txt)"));
-    if (filename.length() > 0) {
-        QString ext = QString(&(filename.data()[filename.length() - 4]));
-        if (ext == ".txt") {
-            QFile file(filename);
-            if (file.open(QFile::ReadWrite | QFile::NewOnly)) {
-                QTextStream stream(&file);
-                stream << ui->plainTextEdit->toPlainText();
-                file.close();
-            }
-        }
+    QString fileName = QFileDialog::getSaveFileName(this,tr("Сохранить файл"),QDir::current().path(), tr("Текстовый файл (*.txt)"));
+    QFile file(fileName);
+    if (file.open(QIODevice::WriteOnly)) {
+        QString str = ui->plainTextEdit->toPlainText();
+        QByteArray barr = str.toUtf8();
+        file.write(barr, barr.length());
     }
 }
 
