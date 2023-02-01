@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Текстовый редактор</string>
+   <string>Текстовый редактор 4.0</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -61,7 +61,15 @@
     <property name="title">
      <string>Справка</string>
     </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>Язык</string>
+     </property>
+     <addaction name="action_6"/>
+     <addaction name="action_7"/>
+    </widget>
     <addaction name="action_4"/>
+    <addaction name="menu_3"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -122,6 +130,16 @@
    </property>
    <property name="text">
     <string>О программе</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>Русский</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>Английский</string>
    </property>
   </action>
  </widget>

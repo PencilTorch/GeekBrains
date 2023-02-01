@@ -1,12 +1,13 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QApplication>
 #include <QMainWindow>
+#include <QTranslator>
 #include <QDir>
 #include <QTextStream>
-#include <QFileDialog>
 #include <QMessageBox>
-
+#include "filedialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,6 +22,10 @@ public:
     ~MainWindow();
 
     void createActions();
+
+signals:
+    void clickSwitch(bool);
+
 private slots:
     void on_action_3_triggered();
 
@@ -34,8 +39,15 @@ private slots:
 
     void on_action_4_triggered();
 
+    void on_action_6_triggered();
+
+    void on_action_7_triggered();
+
+    void changeLang(bool);
+
 private:
     Ui::MainWindow *ui;
+    QTranslator translator;
 
 };
 #endif // MAINWINDOW_H
