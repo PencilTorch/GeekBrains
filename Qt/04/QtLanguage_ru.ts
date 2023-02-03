@@ -4,55 +4,91 @@
 <context>
     <name>FileDialog</name>
     <message>
-        <location filename="filedialog.cpp" line="7"/>
         <source>Open read-only</source>
-        <translation>Открыть только для чтения</translation>
+        <translation type="vanished">Открыть только для чтения</translation>
     </message>
     <message>
-        <location filename="filedialog.cpp" line="9"/>
         <source>Text file (*.txt)</source>
-        <translation>Текстовый файл (*.txt)</translation>
+        <translation type="vanished">Текстовый файл (*.txt)</translation>
+    </message>
+    <message>
+        <source>All files (*)</source>
+        <translation type="vanished">Все файлы (*)</translation>
+    </message>
+    <message>
+        <location filename="filedialog.cpp" line="7"/>
+        <source>Открыть только для чтения</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="filedialog.cpp" line="9"/>
-        <source>All files (*)</source>
-        <translation>Все файлы (*)</translation>
+        <source>Текстовый файл (*.txt)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="filedialog.cpp" line="9"/>
+        <source>Все файлы (*)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="mainwindow.ui" line="14"/>
         <source>Text editor 4.0</source>
         <oldsource>Text editor</oldsource>
-        <translation>Текстовый редактор 4.0</translation>
+        <translation type="vanished">Текстовый редактор 4.0</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="vanished">Открыть</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="vanished">Сохранить</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation type="vanished">Файл</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="vanished">Справка</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation type="vanished">Язык</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="14"/>
+        <source>Текстовый редактор 4.0</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="23"/>
         <location filename="mainwindow.ui" line="87"/>
-        <source>Open</source>
-        <translation>Открыть</translation>
+        <source>Открыть</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="30"/>
         <location filename="mainwindow.ui" line="102"/>
-        <source>Save</source>
-        <translation>Сохранить</translation>
+        <source>Сохранить</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="52"/>
-        <source>File</source>
-        <translation>Файл</translation>
+        <source>Файл</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="62"/>
-        <source>Help</source>
-        <translation>Справка</translation>
+        <source>Справка</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="66"/>
-        <source>Language</source>
-        <translation>Язык</translation>
+        <source>Язык</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="90"/>
@@ -66,8 +102,27 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="117"/>
+        <source>Выход</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="132"/>
+        <source>О программе</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="137"/>
+        <source>Русский</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="142"/>
+        <source>Английский</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Exit</source>
-        <translation>Выход</translation>
+        <translation type="vanished">Выход</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="120"/>
@@ -75,49 +130,63 @@
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="132"/>
         <source>About the program</source>
-        <translation>О программе</translation>
+        <translation type="vanished">О программе</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="137"/>
         <source>Russian</source>
-        <translation>Русский</translation>
+        <translation type="vanished">Русский</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="142"/>
         <source>English</source>
-        <translation>Английский</translation>
+        <translation type="vanished">Английский</translation>
     </message>
     <message>
         <source>Open text file</source>
         <translation type="vanished">Открыть текстовый файл</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="35"/>
         <source>Text file (*.txt)</source>
-        <translation>Текстовый файл (*.txt)</translation>
+        <translation type="vanished">Текстовый файл (*.txt)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="35"/>
         <source>Save file</source>
-        <translation>Сохранить файл</translation>
+        <translation type="vanished">Сохранить файл</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="57"/>
         <source>Help about the program</source>
-        <translation>Справка о программе</translation>
+        <translation type="vanished">Справка о программе</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="57"/>
         <source>The program is a simple text editor.
         Added an option &quot;Only read&quot; and dynamic language switching.</source>
-        <translation>Программа является простым тестовым редактором.
+        <translation type="vanished">Программа является простым тестовым редактором.
 Добавлена опция &quot;Только чтение&quot; и динамическое переключение языка.</translation>
     </message>
     <message>
         <source>The program is a simple text editor.</source>
         <translation type="vanished">Программа является простым тестовым редактором.</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="38"/>
+        <source>Сохранить файл</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="38"/>
+        <source>Текстовый файл (*.txt)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="60"/>
+        <source>Справка о программе</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="60"/>
+        <source>Программа является простым тестовым редактором.
+Добавлена опция &quot;Только чтение&quot; и динамическое переключение языка.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -4,6 +4,10 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
+    translator.load(":/ts/QtLanguage_en");
+    qApp->installTranslator(&translator);
+    ui->retranslateUi(this);
+
     connect(this, &MainWindow::clickSwitch, this, &MainWindow::changeLang);
 }
 
@@ -68,10 +72,11 @@ void MainWindow::on_action_7_triggered() {
 
 void MainWindow::changeLang(bool x) {
     if(x)
-        translator.load(":/ts/QtLanguage_en.qm");
+        translator.load(":/ts/QtLanguage_en");
     else
-        translator.load(":/ts/QtLanguage_ru.qm");
+        translator.load(":/ts/QtLanguage_ru");
     qApp->installTranslator(&translator);
+    ui->retranslateUi(this);
 }
 
 

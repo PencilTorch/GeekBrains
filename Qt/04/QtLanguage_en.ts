@@ -24,7 +24,6 @@
     <message>
         <location filename="mainwindow.ui" line="14"/>
         <source>Текстовый редактор 4.0</source>
-        <oldsource>Текстовый редактор</oldsource>
         <translation>Text editor 4.0</translation>
     </message>
     <message>
@@ -52,7 +51,7 @@
     <message>
         <location filename="mainwindow.ui" line="66"/>
         <source>Язык</source>
-        <translation>Language</translation>
+        <translation>language</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="90"/>
@@ -77,7 +76,7 @@
     <message>
         <location filename="mainwindow.ui" line="132"/>
         <source>О программе</source>
-        <translation>Фbout the program</translation>
+        <translation>About this programm</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="137"/>
@@ -90,34 +89,25 @@
         <translation>English</translation>
     </message>
     <message>
-        <source>Открыть текстовый файл</source>
-        <translation type="vanished">Open text file</translation>
-    </message>
-    <message>
-        <location filename="mainwindow.cpp" line="35"/>
-        <source>Текстовый файл (*.txt)</source>
-        <translation>Text file (*.txt)</translation>
-    </message>
-    <message>
-        <location filename="mainwindow.cpp" line="35"/>
+        <location filename="mainwindow.cpp" line="38"/>
         <source>Сохранить файл</source>
         <translation>Save file</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="57"/>
-        <source>Справка о программе</source>
-        <translation>Help about the program</translation>
+        <location filename="mainwindow.cpp" line="38"/>
+        <source>Текстовый файл (*.txt)</source>
+        <translation>Text file (*.txt)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="57"/>
+        <location filename="mainwindow.cpp" line="60"/>
+        <source>Справка о программе</source>
+        <translation>Help about this programm</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="60"/>
         <source>Программа является простым тестовым редактором.
 Добавлена опция &quot;Только чтение&quot; и динамическое переключение языка.</source>
-        <translation>The program is a simple text editor.
-Added an option &quot;Only read&quot; and dynamic language switching.</translation>
-    </message>
-    <message>
-        <source>Программа является простым тестовым редактором.</source>
-        <translation type="vanished">The program is a simple text editor.</translation>
+        <translation>Программа является простым текстовым редактором. Добавлена опция только чтение и динамический перевод.</translation>
     </message>
 </context>
 </TS>
