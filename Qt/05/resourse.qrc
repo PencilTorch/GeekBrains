@@ -6,7 +6,7 @@
         <file>img/info.png</file>
     </qresource>
     <qresource prefix="/ts">
-        <file>QtLanguage_en.qm</file>
         <file>QtLanguage_ru.qm</file>
+        <file>QtLanguage_en.qm</file>
     </qresource>
 </RCC>
