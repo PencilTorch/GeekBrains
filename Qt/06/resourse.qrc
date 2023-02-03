@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>img/exit.png</file>
+        <file>img/open.png</file>
+        <file>img/save.png</file>
+        <file>img/info.png</file>
+    </qresource>
+    <qresource prefix="/ts">
+        <file>QtLanguage_ru.qm</file>
+        <file>QtLanguage_en.qm</file>
+    </qresource>
+</RCC>
