@@ -7,6 +7,8 @@
 #include <QDir>
 #include <QTextStream>
 #include <QMessageBox>
+#include <QtPrintSupport/QPrinter>
+#include <QtPrintSupport/QPrintDialog>
 #include "filedialog.h"
 
 QT_BEGIN_NAMESPACE
@@ -44,6 +46,12 @@ private slots:
     void on_action_7_triggered();
 
     void changeLang(bool);
+
+    void on_action_8_triggered();
+
+    void on_action_9_triggered();
+
+    void on_action_5_triggered();
 
 private:
     Ui::MainWindow *ui;

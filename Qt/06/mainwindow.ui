@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Текстовый редактор 4.0</string>
+   <string>Текстовый редактор 6.0</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -53,6 +53,7 @@
     </property>
     <addaction name="action"/>
     <addaction name="action_2"/>
+    <addaction name="action_5"/>
     <addaction name="separator"/>
     <addaction name="separator"/>
     <addaction name="action_3"/>
@@ -68,8 +69,16 @@
      <addaction name="action_6"/>
      <addaction name="action_7"/>
     </widget>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>Тема</string>
+     </property>
+     <addaction name="action_8"/>
+     <addaction name="action_9"/>
+    </widget>
     <addaction name="action_4"/>
     <addaction name="menu_3"/>
+    <addaction name="menu_4"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -140,6 +149,28 @@
   <action name="action_7">
    <property name="text">
     <string>Английский</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Светлая</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>Тёмная</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/res/img/print.png</normaloff>:/res/img/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Печать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
    </property>
   </action>
  </widget>
