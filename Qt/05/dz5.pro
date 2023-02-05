@@ -32,8 +32,4 @@ TRANSLATIONS += QtLanguage_ru.ts QtLanguage_en.ts
 CODECFORSRC = UTF-8
 
 DISTFILES += \
-    QtLanguage_en.ts \
-    QtLanguage_en.ts \
-    QtLanguage_en.ts \
-    QtLanguage_en.ts \
     QtLanguage_ru.ts

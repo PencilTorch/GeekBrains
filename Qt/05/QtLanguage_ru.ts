@@ -18,17 +18,17 @@
     <message>
         <location filename="filedialog.cpp" line="7"/>
         <source>Открыть только для чтения</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть только для чтения</translation>
     </message>
     <message>
         <location filename="filedialog.cpp" line="9"/>
         <source>Текстовый файл (*.txt)</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстовый файл (*.txt)</translation>
     </message>
     <message>
         <location filename="filedialog.cpp" line="9"/>
         <source>Все файлы (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Все файлы (*)</translation>
     </message>
 </context>
 <context>
@@ -60,72 +60,87 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="14"/>
-        <source>Текстовый редактор 4.0</source>
-        <translation type="unfinished"></translation>
+        <source>Текстовый редактор 5.0</source>
+        <translation>Текстовый редактор 5.0</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="23"/>
-        <location filename="mainwindow.ui" line="87"/>
+        <location filename="mainwindow.ui" line="95"/>
         <source>Открыть</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="30"/>
-        <location filename="mainwindow.ui" line="102"/>
+        <location filename="mainwindow.ui" line="110"/>
         <source>Сохранить</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="52"/>
         <source>Файл</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="62"/>
         <source>Справка</source>
-        <translation type="unfinished"></translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="66"/>
         <source>Язык</source>
-        <translation type="unfinished"></translation>
+        <translation>Язык</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="90"/>
+        <location filename="mainwindow.ui" line="73"/>
+        <source>Тема</source>
+        <translation>Тема</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="98"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="105"/>
+        <location filename="mainwindow.ui" line="113"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="117"/>
+        <location filename="mainwindow.ui" line="125"/>
         <source>Выход</source>
-        <translation type="unfinished"></translation>
+        <translation>Выход</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="132"/>
+        <location filename="mainwindow.ui" line="140"/>
         <source>О программе</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="137"/>
+        <location filename="mainwindow.ui" line="145"/>
         <source>Русский</source>
-        <translation type="unfinished"></translation>
+        <translation>Русский</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="142"/>
+        <location filename="mainwindow.ui" line="150"/>
         <source>Английский</source>
-        <translation type="unfinished"></translation>
+        <translation>Английский</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="155"/>
+        <source>Светлая</source>
+        <translation>Светлая</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="160"/>
+        <source>Тёмная</source>
+        <translation>Тёмная</translation>
     </message>
     <message>
         <source>Exit</source>
         <translation type="vanished">Выход</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="120"/>
+        <location filename="mainwindow.ui" line="128"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
@@ -168,25 +183,26 @@
         <translation type="vanished">Программа является простым тестовым редактором.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="38"/>
+        <location filename="mainwindow.cpp" line="39"/>
         <source>Сохранить файл</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить файл</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="38"/>
+        <location filename="mainwindow.cpp" line="39"/>
         <source>Текстовый файл (*.txt)</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстовый файл (*.txt)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="60"/>
+        <location filename="mainwindow.cpp" line="61"/>
         <source>Справка о программе</source>
-        <translation type="unfinished"></translation>
+        <translation>Справка о программе</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="60"/>
+        <location filename="mainwindow.cpp" line="61"/>
         <source>Программа является простым тестовым редактором.
 Добавлена опция &quot;Только чтение&quot; и динамическое переключение языка.</source>
-        <translation type="unfinished"></translation>
+        <translation>Программа является простым тестовым редактором.
+Добавлена опция &quot;Только чтение&quot; и динамическое переключение языка.</translation>
     </message>
 </context>
 </TS>

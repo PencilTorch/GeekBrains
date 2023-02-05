@@ -45,6 +45,10 @@ private slots:
 
     void changeLang(bool);
 
+    void on_action_8_triggered();
+
+    void on_action_9_triggered();
+
 private:
     Ui::MainWindow *ui;
     QTranslator translator;

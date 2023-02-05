@@ -4,11 +4,11 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
+    connect(this, &MainWindow::clickSwitch, this, &MainWindow::changeLang);
+
     translator.load(":/ts/QtLanguage_en");
     qApp->installTranslator(&translator);
     ui->retranslateUi(this);
-
-    connect(this, &MainWindow::clickSwitch, this, &MainWindow::changeLang);
 }
 
 MainWindow::~MainWindow()
@@ -79,4 +79,24 @@ void MainWindow::changeLang(bool x) {
     ui->retranslateUi(this);
 }
 
+//светлая тема
+void MainWindow::on_action_8_triggered() {
+    this->setStyleSheet("QMainWindow { background-color: #FFF5EE; color: black }"
+                        "QMenuBar { background-color: #FFF5EE; color: black }"
+                        "QMenu { background-color: #FFF5EE; color: black }"
+                        "QPlainTextEdit { background-color: #FFFFF0; color: black }"
+                        "QPushButton { background-color: #FFF5EE; color: black }");
+    this->update();
+}
+
+//темная тема
+void MainWindow::on_action_9_triggered() {
+    this->setStyleSheet("QMainWindow { background-color: #006400; color: #E0FFFF }"
+                        "QMenuBar { background-color: #006400; color: #E0FFFF }"
+                        "QMenu { background-color: #006400; color: #E0FFFF }"
+                        "QPlainTextEdit { background-color: #008000; color: #E0FFFF }"
+                        "QPushButton { background-color: #008000; color: #E0FFFF }"
+                        );
+    this->update();
+}
 
