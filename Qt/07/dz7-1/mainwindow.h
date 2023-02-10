@@ -9,6 +9,8 @@
 #include <QMessageBox>
 #include <QtPrintSupport/QPrinter>
 #include <QtPrintSupport/QPrintDialog>
+#include <QMenu>
+#include <QPushButton>
 #include "filedialog.h"
 
 QT_BEGIN_NAMESPACE
@@ -31,10 +33,6 @@ signals:
 private slots:
     void on_action_3_triggered();
 
-    void on_pushButton_clicked();
-
-    void on_pushButton_2_clicked();
-
     void on_action_triggered();
 
     void on_action_2_triggered();
@@ -53,9 +51,22 @@ private slots:
 
     void on_action_5_triggered();
 
+    void setFont();
+
+    void on_actionAlignLeft_triggered();
+
+    void on_actionAlignCenter_triggered();
+
+    void on_actionAlignRight_triggered();
+
 private:
     Ui::MainWindow *ui;
     QTranslator translator;
+    QMenu *menu_font;
+    QPushButton *button_fonts;
+    QFont *myFont;
+    QAction *action;
 
+    void fillFontSelect();
 };
 #endif // MAINWINDOW_H
